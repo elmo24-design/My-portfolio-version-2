@@ -348,4 +348,11 @@
       background-color: #2D2D2D;
    }
    
+   @media screen and (max-width: 400px) {
+      #home{
+         background-image: none;
+         background-color: var(--dark-primary-color);
+         overflow-x: hidden;
+      }      
+   }
 }

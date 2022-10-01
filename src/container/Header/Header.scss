@@ -12,6 +12,14 @@
       }
    }
 }
+
+@media screen and (max-width: 400px) {
+   #home{
+      background-image: none;
+      overflow-x: hidden;
+   }      
+}
+
 .app__header{
    width: 1050px;
    height: 100%;
