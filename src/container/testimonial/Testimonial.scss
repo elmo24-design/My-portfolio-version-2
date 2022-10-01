@@ -22,20 +22,23 @@
    }
    @media screen and (min-width: 2000px) {
       min-height: 450px;
+   }
 
-      img{
-         width: 150px;
-         height: 150px;
-      }
-   }
-   @media screen and (max-width: 850px) {
-      width: 100%;
-      img{
-         padding-bottom: 0.5rem;
-      }
-   }
    @media screen and (max-width: 600px) {
       flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .app__testimonial-item{
+      width: 100%;
+      flex-direction: column;
+      .feedback-text{
+         font-size: 0.9rem;
+      }
+      img{
+         margin-bottom: 2rem;
+      }
    }
 }
 

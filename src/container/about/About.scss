@@ -5,11 +5,69 @@
 }
 
 .app__profiles{
+   margin-top: 3rem;
    display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   flex-wrap: wrap;
-   margin-top: 2rem;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2rem;
+
+   .left-about-grid{
+      padding-right: 5rem;
+      position: relative;
+
+      img{
+         width: 430px;
+      }
+
+   }
+   .right-about-grid{
+      p{
+         padding-top: 1rem;
+      }
+      .p-2{
+         padding-bottom: 1rem;
+      }
+      .about-icons{
+         display: flex;
+         padding-top: 1rem;
+         a{
+            color: rgb(0, 0, 0);
+            padding-left: 15px;
+            font-size: 1.5rem;
+         }
+         .first-about-icon{
+            padding-left: 0;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .app__profiles{
+      flex-direction: column;
+      .left-about-grid{
+         padding-right: 0;
+         img{
+            width: 300px;
+            margin-bottom: 3rem;
+         }         
+      }
+      .right-about-grid{
+         text-align: center;
+         .about-icons{
+            justify-content: center;
+         }
+      }
+   }
+}
+
+.arrow{
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   margin-right: -6rem;
+   width: 14rem;
+   margin-top: -1rem;
 }
 
 .app__profile-item{

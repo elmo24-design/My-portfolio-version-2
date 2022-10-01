@@ -10,7 +10,7 @@
 .app__primarybg {
    background-color: var(--primary-color);
 }
- 
+
 .app__container {
    width: 100%;
    min-height: 100vh;
@@ -99,9 +99,9 @@
  
 .app__social {
    display: flex;
+   flex-direction: column;
    justify-content: flex-end;
    align-items: center;
-   flex-direction: column;
 
    padding: 1rem;
 
@@ -162,6 +162,7 @@
       border-radius: 50%;
       background-color: #cbcbcb;
       margin: 0.5rem;
+      cursor: pointer;
 
       transition: background-color 0.2s ease-in-out;
 
@@ -176,8 +177,20 @@
    }
 }
 
+.mt-1{
+   margin-top: 1rem;
+}
 .mt-2{
    margin-top: 2rem;
+}
+.mb-1{
+   margin-bottom: 1rem;
+}
+.mb-2{
+   margin-bottom: 2rem;
+}
+.mb-3{
+   margin-bottom: 3rem;
 }
  
 @media screen and (max-width: 500px) {
@@ -189,4 +202,150 @@
    .copyright {
      padding: 2rem;
    }
+}
+
+//Dark mode classnames
+.darkmode{
+   h1, h2, h3, h4, p, ul li a, svg, .p-text{
+      color: white;
+   }
+
+   .app__whitebg {
+      background-color: var(--dark-secondary-color);
+   }
+    
+   .app__primarybg {
+      background-color: var(--dark-primary-color);
+   }
+
+   #home{
+      background: url('./assets/dark-bg.png');
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+   }
+
+   .app__navbar{
+      background: #212121;
+      backdrop-filter: none;
+      border: none;
+   }
+
+   .app__header-circles{
+      div{
+         background: var(--dark-secondary-color);
+      }
+   }
+
+   .app__navigation-dot{
+      background-color: white;
+   }
+
+   .app__social{
+      div{
+         background-color: rgba(0, 0, 0, 0.411);;
+         border:none;
+         svg{
+            color: white;
+         }
+
+
+         &:hover{
+            background-color: var(--secondary-color);
+         }
+      }
+   }
+
+   .app__navbar-menu{
+      div{
+         background-color: #424242;
+
+         svg{
+            color: white;
+         }
+         
+         ul li a{
+            color: white;
+            &:hover{
+               color: var(--secondary-color);
+            }
+         }
+      }
+      
+   }
+
+   //work 
+   .app__work-filter{
+      .app__work-filter-item{
+         background-color: var(--dark-primary-color);
+
+         &:hover{
+            background-color: var(--secondary-color);
+         }
+      }
+      .item-active{
+         background-color: var(--secondary-color);
+      }
+   }
+   .app__work-portfolio{
+      .app__work-item{
+         background-color: rgba(56, 56, 56, 0.411);
+         color: #000
+      }
+   }
+   .app__work-tag{
+      background-color: #2D2D2D;
+   }
+   .github-btn{
+      background-color: var(--dark-primary-color);
+      color: white;
+   }
+   .modal{
+      background-color: var(--dark-primary-color);
+   }
+
+   //Skills
+   .app__skills-item{
+      div{
+         background-color: #2D2D2D;
+      }
+   }
+
+   //Testimonials
+   .app__testimonial-content{
+      h4{
+         color: rgb(170, 128, 247);
+      }
+   }
+   .app__testimonial-item{
+      background-color: #2D2D2D;
+   }
+   .app__testimonial-btns{
+      div{
+         background-color: #2D2D2D;
+         svg{
+            color: white;
+         }
+         &:hover{
+            background-color: var(--secondary-color);
+         }
+      }
+   }
+
+   //Footer
+   .app__footer-form{
+      div{
+         background-color: #2D2D2D;
+         input, textarea{
+            background-color: #2D2D2D;
+         }
+      }
+   }
+   .app__footer-card{
+      background-color: #2D2D2D;
+   }
+   .app__footer-cards .app__footer-card:nth-child(2){
+      background-color: #2D2D2D;
+   }
+   
 }

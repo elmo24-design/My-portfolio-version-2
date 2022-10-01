@@ -26,7 +26,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experience</h2>
+      <h2 className="head-text"> <span>Skills</span> & Experience</h2>
 
       {/* Skills Container  */}
       <div className="app__skills-container">
@@ -40,7 +40,7 @@ const Skills = () => {
               className="app__skills-item app__flex"
               key={skill.name}
             >
-              <div className='app__flex' style={{ backgroundColor: skill.bgColor }}>
+              <div className='app__flex'>
                 <img src={urlFor(skill.icon)} alt={skill.name}/>
               </div>
               <p className="p-text">{skill.name}</p>

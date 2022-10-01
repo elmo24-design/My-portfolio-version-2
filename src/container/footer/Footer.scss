@@ -12,7 +12,7 @@
    margin: 4rem 2rem 2rem;
    
    .app__footer-card{
-      min-width: 290px;
+      width: 300px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -22,14 +22,16 @@
       padding: 1rem;
       border-radius: 10px;
       cursor: pointer;
-      background-color: #fef4f5;
+      background-color: #e4e9ff;
 
       transition: all 0.3s ease-in-out;
 
       img{
          width: 40px;
-         height: 40px;
          margin: 0 0.7rem;
+      }
+      .gmail-img{
+         width: 60px;
       }
       p{
          font-weight: 600;
@@ -49,12 +51,19 @@
    }
 }
 
+@media screen and (max-width: 1200px) {
+   .app__footer-cards{
+      width: 90%;
+   }
+}
+
+
 .app__footer-cards .app__footer-card:nth-child(2){
    background-color: #f2f7fb;
 }
 
 .app__footer-form{
-   width: 60%;
+   width: 100%;
    flex-direction: column;
    margin: 1rem 2rem;
    

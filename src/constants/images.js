@@ -9,6 +9,7 @@ import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
+import jsCircle from '../assets/js-circle.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
@@ -25,10 +26,14 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+import aboutImg from '../assets/about-img.png';
+import aboutArrow from '../assets/about-arrow.png';
+
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import vexelFinal from '../assets/vexel-new.png';
+import vexelNew from '../assets/vexel-final.png';
 import elmoLogo from '../assets/elmo-logo.png';
 
 import adidas from '../assets/adidas.png';
@@ -38,6 +43,9 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+
+import lightBg from '../assets/light-bg.png';
+import darkBg from '../assets/dark-bg.png';
 
 export default {
   email,
@@ -51,6 +59,7 @@ export default {
   graphql,
   html,
   javascript,
+  jsCircle,
   mu5,
   node,
   python,
@@ -63,6 +72,8 @@ export default {
   about02,
   about03,
   about04,
+  aboutImg,
+  aboutArrow,
   profile,
   circle,
   logo,
@@ -74,7 +85,10 @@ export default {
   skype,
   spotify,
   vexelFinal,
+  vexelNew,
   elmoLogo,
   nextjsLogo,
-  reactLogo
+  reactLogo,
+  lightBg,
+  darkBg
 };
