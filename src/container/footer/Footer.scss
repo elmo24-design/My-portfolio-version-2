@@ -3,6 +3,13 @@
    width: 100%;
    flex-direction: column;
 }
+.app__footer-copyright{
+   display: flex;
+   justify-content: center;
+   background-color: var(--secondary-color);
+   color: white;
+   padding: 3.5rem;
+}
 .app__footer-cards{
    width: 60%;
    display: flex;

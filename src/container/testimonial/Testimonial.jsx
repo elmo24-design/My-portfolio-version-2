@@ -38,8 +38,8 @@ const Testimonial = () => {
             <img src={urlFor(test.imgurl)} alt="testimonial"/>
             <div className="app__testimonial-content">
               <p className="p-text feedback-text">{test.feedback}</p>
-              <div>
-                <h4 className="bold-text">{test.name}</h4>
+              <div className='feedback-owner'>
+                <h4>{test.name}</h4>
                 <h5 className='p-text'>{test.company}</h5>
               </div>
             </div>

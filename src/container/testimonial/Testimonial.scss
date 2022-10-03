@@ -26,6 +26,17 @@
 
    @media screen and (max-width: 600px) {
       flex-direction: column;
+      padding: 2rem 0rem;
+      .feedback-text{
+         text-align: center;
+      }
+      .feedback-owner{
+         width: 100%;
+         text-align: center;
+         h5{
+            text-align: center;
+         }
+      }
    }
 }
 
