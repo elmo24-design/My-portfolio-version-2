@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {AiFillEye, AiFillGithub} from 'react-icons/ai'
 import { motion } from 'framer-motion'
+import moment from 'moment'
 
 import {AppWrap, MotionWrap} from '../../wrapper'
 import { urlFor, client } from '../../client'
@@ -18,7 +19,7 @@ const Work = () => {
   const [selectedWork, setSelectedWork] = useState(null)
   
   useEffect(() => {
-    const query = '*[_type == "works"]'
+    const query = '*[_type == "works"] | order(_createdAt desc)'
 
     client.fetch(query).then((data) => {
       setWorks(data)
@@ -55,7 +56,7 @@ const Work = () => {
       <p className='app__flex mt-1'>Take a look at some of my projects</p>
 
       <div className="app__work-filter">
-        {[ 'Frontend', 'Fullstack', 'All'].map((item, index) => (
+        {[ 'All', 'Frontend', 'Fullstack'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -101,8 +102,9 @@ const Work = () => {
                   Code
                 </a>
               </div>
-              <h4 className='bold-text'>{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <h4 className='bold-text '>{work.title}</h4>
+              <small>{work.description}</small>
+              <p className="p-text date_created" style={{ marginTop: 10 }}>Published: {moment(work._createdAt).format("LL")}</p>
               
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>

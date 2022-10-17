@@ -27,7 +27,7 @@ const Navbar = ({ darkMode, checkedBool, handleChange }) => {
   return (
     <nav className='app__navbar'>
       <div className="app__navbar-logo">
-        <img src={images.elmoLogo} alt="logo" />
+        <img src={ darkMode ? images.elmoLogoWhite : images.elmoLogoPurple } alt="logo" />
       </div>
       <ul className='app__navbar-links'>
         <li className="app__flex p-text">
@@ -86,7 +86,9 @@ const Navbar = ({ darkMode, checkedBool, handleChange }) => {
             {
               ['home', 'projects', 'about', 'skills', 'testimonials', 'contact'].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+                  <Link activeClass="active" smooth spy to={item} onClick={() => setToggle(false)}>
+                    { item }
+                  </Link>
                 </li>
               ))
             }

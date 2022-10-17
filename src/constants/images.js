@@ -31,10 +31,15 @@ import aboutArrow from '../assets/about-arrow.png';
 
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
+import uiLogo from '../assets/ui-logo.png';
+import code from '../assets/code.png';
 import logo from '../assets/logo.png';
 import vexelFinal from '../assets/vexel-new.png';
 import vexelNew from '../assets/vexel-final.png';
 import elmoLogo from '../assets/elmo-logo.png';
+import elmoLogoPurple from '../assets/elmo-logo-purple.png';
+import elmoLogoWhite from '../assets/elmo-logo-white.png';
+import chibielms2 from '../assets/chibielms2.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -76,6 +81,8 @@ export default {
   aboutArrow,
   profile,
   circle,
+  uiLogo,
+  code,
   logo,
   adidas,
   amazon,
@@ -87,6 +94,9 @@ export default {
   vexelFinal,
   vexelNew,
   elmoLogo,
+  elmoLogoPurple,
+  elmoLogoWhite,
+  chibielms2,
   nextjsLogo,
   reactLogo,
   lightBg,

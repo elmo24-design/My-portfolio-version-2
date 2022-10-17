@@ -15,7 +15,7 @@ const modal = {
       y: "-100vh"
    },
    visible: {
-      y: '80px',
+      y: 0,
       opacity: 1,
       transition: {
          delay: 0.2

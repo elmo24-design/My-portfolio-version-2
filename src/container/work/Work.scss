@@ -11,7 +11,7 @@
    align-items: center;
    flex-wrap: wrap;
 
-   margin: 4rem 0 2rem;
+   margin: 3rem 0 2rem;
 
    .app__work-filter-item{
       padding: 0.5rem 1rem;
@@ -41,16 +41,24 @@
 }
 
 .app__work-portfolio{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2rem;
+   padding: 0 5rem;
+
+   @media screen and (max-width: 1115px) {
+      padding: 0;
+   }
+
+   @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2,1fr);
+   }
+   @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;     
+   }
 
    .app__work-item{
-      width: 270px;
       flex-direction: column;
-      
-      margin: 2rem;
       padding: 1rem;
       border-radius: 0.5rem;
       background-color: #fff;
@@ -142,6 +150,12 @@
    h4{
       margin-top: 1rem;
       line-height: 1.5;
+      align-self: start;
+   }
+
+   small{
+      align-self: start;
+      padding-top:0.5rem;
    }
 
    .app__work-tag{
@@ -151,6 +165,10 @@
       border-radius: 10px;
       background-color: #fff;
       top: -25px;
+   }
+
+   .date_created{
+      align-self: start;
    }
 }
 
@@ -201,6 +219,9 @@
    height: 100%;
    background: rgba(0,0,0,0.7);
    z-index: 10;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .modal{
    width: 800px;

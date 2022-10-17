@@ -36,7 +36,7 @@ const App = () => {
       enableDarkMode()
     }
     
-  }, []);
+  }, [darkmode]);
 
   return (
     <div className={darkMode ? "app darkmode" : "app"}>

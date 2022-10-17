@@ -22,7 +22,7 @@
    justify-content: flex-start;
    align-items: center;
    img{
-      width: 50px;
+      width: 45px;
       @media screen and (min-width: 2000px) {
          width: 80px;
       }
@@ -86,6 +86,10 @@
    align-items: center;
    background-color: var(--secondary-color);
 
+   .active{
+      border-bottom: 2px solid white;
+   }
+
    svg{
       width: 70%;
       height: 70%;
@@ -129,6 +133,7 @@
 
          li{
             margin: 1rem;
+            cursor: pointer;
             a{
                color: var(--gray-color);
                text-decoration: none;

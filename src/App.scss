@@ -96,6 +96,10 @@
       font-size: 0.9rem;
    }
 }
+
+.text-center{
+   text-align: center;
+}
  
 .app__social {
    display: flex;
@@ -206,7 +210,7 @@
 
 //Dark mode classnames
 .darkmode{
-   h1, h2, h3, h4, p, ul li a, svg, .p-text{
+   h1, h2, h3, h4, p, ul li a, svg, small, .p-text{
       color: white;
    }
 
@@ -231,9 +235,14 @@
       border: none;
    }
 
-   .app__header-circles{
-      div{
-         background: var(--dark-secondary-color);
+   .circle, .white-box{
+      background: var(--dark-secondary-color);
+      color:white;
+   }
+
+   .arrow-down{
+      svg{
+         color: var(--secondary-color);
       }
    }
 
@@ -273,6 +282,7 @@
       }
       
    }
+
 
    //work 
    .app__work-filter{
