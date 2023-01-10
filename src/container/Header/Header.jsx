@@ -42,7 +42,9 @@ const Header = () => {
                 }}
               /> */}
             </p>
-            <p className="heading-desc-2">I Craft Creative And Engaging Web Apps</p>
+            <p className="heading-desc-2">
+              A Frontend developer from Pililla, Rizal, Philippines. I craft creative And engaging Web Apps
+            </p>
           </div>
           {/* Call to action buttons  */}
           <div className="cta">

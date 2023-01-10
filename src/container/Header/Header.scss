@@ -92,7 +92,7 @@
 
 .arrow-down{
    position: absolute;
-   bottom: -12.5rem;
+   bottom: -10rem;
 
    svg{
       font-size:4rem;
@@ -108,7 +108,7 @@
       height: 5rem;
       display: flex;
       justify-content: center;
-      align-items: end;
+      align-items: flex-end;
       svg{
          font-size: 3rem;
          margin-bottom: -5rem;
