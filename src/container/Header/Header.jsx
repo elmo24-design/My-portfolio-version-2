@@ -43,7 +43,7 @@ const Header = () => {
               /> */}
             </p>
             <p className="heading-desc-2">
-              A Fullstack developer from Pililla, Rizal, Philippines. I craft creative And engaging Web Apps
+              A Fullstack developer from Pililla, Rizal, Philippines. I craft creative and engaging Web Apps
             </p>
           </div>
           {/* Call to action buttons  */}
