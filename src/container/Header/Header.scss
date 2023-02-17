@@ -21,8 +21,9 @@
 }
 
 .app__header{
-   width: 1050px;
+   width: 1080px;
    height: 100%;
+   // background-color: gray;
 
    display: flex;
    align-items: center;
@@ -56,6 +57,8 @@
    color: #465056;
    padding-right: 5rem;
    margin-top: -2rem;
+   margin-right: -1rem;
+   // background-color: gray;
 
    @media screen and (max-width: 2000px) {
       width: 100%;
@@ -92,7 +95,7 @@
 
 .arrow-down{
    position: absolute;
-   bottom: -10rem;
+   bottom: -11rem;
 
    svg{
       font-size:4rem;
@@ -130,12 +133,14 @@
    margin-top: -0.5rem;
    font-weight: 500;
    font-size: 1.5rem;
-   margin-bottom: 2rem;
+   margin-bottom: 1.5rem;
 }
 
 .heading-desc-2{
    font-size: 1.1rem;
    padding-left: 0.2rem;
+   margin-bottom: 0.7rem;
+   // max-width: 25rem;
 }
 
 .cta{
@@ -146,8 +151,8 @@
       background-color: var(--secondary-color);
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       color: white;
-      padding: 1.1rem 2.5rem;
-      border-radius: 30px;
+      padding: 1.5rem 3rem;
+      border-radius: 300px;
       &:hover{
          opacity: 0.9;
       }
@@ -203,9 +208,9 @@
    position: relative;
    img{
       z-index: 1;
-      width: 500px;
+      width: 530px;
    }
-   .chibi{
+   .vexelFinal{
       margin-top: -1rem;
    }
    .overlay_circle{
@@ -236,8 +241,8 @@
 
    
    .circle{
-      width: 130px;
-      height: 130px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
 
       background: var(--white-color);
@@ -263,34 +268,32 @@
       flex-direction: column;
       align-items: center;
       img{
-         width: 50%;
+         width: 40%;
       }
    }
 
    .circle-container-1{
-      // margin: 1.75rem;
-      animation: float2 6s ease-in-out infinite;
+      animation: float 6s ease-in-out infinite;
       position: absolute;
       text-align: center;
-      bottom: 10%;
-      left: -6%;
+      right: -4%;
+      top: 30%;
       img{
          padding-top: 1rem;
       }
    }
 
    .circle-container-2{
-      animation: float 6s ease-in-out infinite;
+      // margin: 1.75rem;
+      animation: float2 6s ease-in-out infinite;
       position: absolute;
       text-align: center;
-
-      right: -10%;
-      top: 30%;
-
+      bottom: 32%;
+      left: -5%;
       img{
          animation: spin 20s linear infinite;
       }
-   }
+    }
 
    @keyframes float {
       0% {
@@ -340,13 +343,16 @@
    }
 
    @media screen and (max-width: 500px) {
+      .white-box{
+         width: 6rem;
+      }
       .circle-container-1{
          bottom: 10%;
-         left: -3%;
+         right: -5%;
       }
    
       .circle-container-2{   
-         right: -5%;
+         left: -5%;
          top: 30%;
       }
    }
@@ -360,11 +366,13 @@
 
    @media screen and (max-width: 400px) {
       .circle-container-1{
-         left: -7%;
+         bottom: 10%;
+         right: -8%;
       }
    
       .circle-container-2{   
-         right: -8%;
+         left: -8%;
+         top: 30%;
       }
    }
 }
