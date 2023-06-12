@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
 import ReactTooltip from 'react-tooltip'
 
-import {AppWrap, MotionWrap} from '../../wrapper'
-import { urlFor, client } from '../../client'
+import { client, urlFor } from '../../client'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import './Skills.scss'
 
 const Skills = () => {
@@ -12,7 +12,7 @@ const Skills = () => {
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]'
+    const query = '*[_type == "experiences"] | order(_createdAt desc)'
     const skillsQuery = '*[_type == "skills"]'
 
     client.fetch(query).then((data) => {
