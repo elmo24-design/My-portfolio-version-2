@@ -30,6 +30,7 @@
 
    }
    .right-about-grid{
+      color: var(--dark-gray-color);
       p{
          padding-top: 1rem;
       }
@@ -40,9 +41,9 @@
          display: flex;
          padding-top: 1rem;
          a{
-            color: rgb(0, 0, 0);
             padding-left: 15px;
             font-size: 1.5rem;
+            color: var(--dark-gray-color);
          }
          .first-about-icon{
             padding-left: 0;
